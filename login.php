@@ -15,8 +15,8 @@
      <a href="index1.html">Домашняя страница</a>
      <h1>Введите свои имя и пароль</h1>
 	 <form method="POST" action="check_login.php"> 
-	  <input type="text" name="txtUser"/><br/>
-	  <input type="password" name="txtPwd"/><br/>
+   <a>Имя пользователя</a><br/> <input type="text" name="txtUser"/><br/>
+	 <a>Пароль</a><br/>           <input type="password" name="txtPwd"/><br/>
 	  <button>Вперёд</button><br/>
 	 </form>
 	 

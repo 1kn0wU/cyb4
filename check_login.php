@@ -38,7 +38,7 @@ $hash=hash("sha256",$pwd);
 $server=getenv("cyb4_db_server");
 $login=getenv("cyb4_db_user");
 $pwd=trim(getenv("cyb4_db_pwd"));
-$conn=mysqli_connect($server,$login,$pwd,"cyb4");
+$conn=mysqli_connect($server,$login,$pwd,"mysql");
 
 // Устраяем проблему SQL Injection
 $sql="SELECT * FROM users WHERE Login=? AND PwdHash=? ";
@@ -55,7 +55,7 @@ if($numRows == 0) {
 else {
   echo"<h1>Привет, $user!</h1>";
   $_SESSION["user"]=$user;
-
+  echo '<meta http-equiv="refresh" content= "3; url=calc.php"/>';
 }
 
 mysqli_close($conn);

@@ -10,7 +10,7 @@ sleep(1); //симуляция задержки
 // 2. Нарушен принцип наименьших привилегий
 // 3. Стандартный порт (3306)
 // 4. Секрет в коде (в код вшит пароль, открытый код)
-$conn=mysqli_connect("localhost:3306","root","","cyb4");
+$conn=mysqli_connect("localhost:3306","root","","mysql");
 
 // 5. Уязвимость для SQL Injection
 $sql="INSERT INTO Calcs(Num1,Num2,User) VALUES($x,$y,'Anonym')";
